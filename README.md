@@ -4,8 +4,7 @@
 To develop an algorithm to find the route from the source to the destination point using breadth-first search.
 
 ## THEORY
-Breadth-first search, also known as BFS, finds shortest paths from a given source vertex to all other
-vertices, in terms of the number of edges in the paths.
+Breadth-first search, also known as BFS, finds shortest paths from a given source vertex to all other vertices, in terms of the number of edges in the paths.Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root, and explores all of the neighbour nodes at the present depth prior to moving on to the nodes at the next depth level. BFS is a graph traversal approach in which you start at a source node and layer by layer through the graph, analyzing the nodes directly related to the source node. Then, in BFS traversal, you must move on to the next-level neighbor nodes.
 
 ## DESIGN STEPS
 
@@ -19,9 +18,12 @@ Select a specific number of nodes with distance
 Import required packages.
 
 ### STEP 4:
-Include each node and its distance separately in the dictionary data structure.
+Initialize a queue. All nodes in which nearby nodes have already been visited; you must remove them from the queue.Because the queue is now empty, the bfs traversal has ended.
 
 ### STEP 5:
+Include each node and its distance separately in the dictionary data structure.
+
+### STEP 6:
 End of program.
 
 ## ROUTE MAP
@@ -30,7 +32,11 @@ End of program.
 <br>
 
 ## PROGRAM
+```python
+Name : R.Arunraj
+Reg.No : 212220230004
 ```
+```python
 %matplotlib inline
 import matplotlib.pyplot as plt
 import random
@@ -38,8 +44,6 @@ import math
 import sys
 from collections import defaultdict, deque, Counter
 from itertools import combinations
-# Experiment done by
-# Student name R Arunraj
 class Problem(object):
     """The abstract class for a formal problem. A new domain subclasses this,
     overriding `actions` and `results`, and perhaps other methods.
@@ -183,7 +187,7 @@ print("Total Distance={0} Kilometers".format(goal_state_path.path_cost))
 ![Output](https://user-images.githubusercontent.com/75235747/166149276-c260f80b-c691-4915-ab74-2126c81fcb3f.JPG)
 <br>
 ## SOLUTION JUSTIFICATION:
-Route follow the minimum distance between locations using breadth-first search.
-
+Route follow the minimum distance between locations using breadth-first search. As BFS traverses the tree “shallowest node first”, it would always pick the shallower branch until it reaches the solution.
 ## RESULT:
-Thus the program developed for finding route with drawn map and finding its distance covered.
+Thus an algorithm to find the route from the source to the destination point using breadth-first search is developed and executed successfully.
+
